@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+.grid{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 1fr 200px;
+    background-color:antiquewhite;
+    padding: 10px;
+}
+.restnamn{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: wheat;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    display: grid;
+    box-sizing: border-box;
+    text-align: center;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 30% 25% 15% 30%;
+}
+.restnamn h1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: Geneva;
+    color: darkred;
+    background-color: peru;
+    font-size: xx-large;
+    border-bottom: 3px solid darkgreen;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.restnamn h2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-family: Geneva;
+    font-size:medium;
+    color: peru;
+    background-color: darkred;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*NAVBAR*/
+.navbar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.navbar ul{
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: column nowrap;
+    position: sticky;
+    top: 200px;
+    list-style: none;
+}
+.navbar ul li {
+    margin-top: 20px;
+}
+.navbar ul li a{
+    color: firebrick;
+    border-left: 3px solid darkred;
+    border-radius: 10px;
+    padding: 5px;
+}
+.navbar ul a:hover{
+    background-color: wheat;
+    border-right: 3px solid darkred;
+    border-radius: 10px;
+    margin: 15px;
+    font-size:large;
+}
+/*INFORUTA*/
+.inforuta{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 15px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+}
+.inforuta h3{
+    color: darkred;
+    font-size: 25px;
+    font-family: Geneva;
+    border-bottom: 2px solid;
+}
+.inforuta h4{
+    color: darkred;
+    font-size: 17.5px;
+    padding-top: 7.5px;
+}
+.inforuta p{
+    color: firebrick;
+    font-size: 15px;
+    padding-top: 5px;
+    border-bottom: 1px solid;
+}
+/*FOOTER*/
+.footer{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: wheat;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    padding: 10px;
+}
+.footer h6{
+    color: peru;
+    font-family: Geneva;
+    font-size: 12.5px;
+    padding-top: 10px;
+    text-align: center;
+}
+.footer p{
+    color: firebrick;
+    font-size: 20px;
+    text-align: center;
+}
+/*MENY*/
+.meny{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 15px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+}
+.meny h3{
+    color: darkred;
+    font-size: 25px;
+    font-family: Geneva;
+    border-bottom: 2px solid;
+}
+.burek-varm-grill{
+    border-top: 1.5px dotted darkred;
+    border-left: 1.5px dotted darkred;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(245, 228, 197);
+}
+.meny h4{
+    display: inline-block;
+    color: darkred;
+    font-size: 20px;
+    font-family: Geneva;
+    padding: 2px;
+    background-color: rgb(251, 245, 237);
+    border-top-left-radius: 12.5px;
+    border-top-right-radius: 12.5px;
+    border-bottom: 2px solid;
+}
+.meny h5{
+    margin-top: 5px;
+    color: firebrick;
+    padding-top: 5px;
+    font-size: 17.5px;
+}
+.meny h6{
+    color: peru;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+.meny p{
+    font-size: 12.5px;
+    background-color: wheat;
+    padding: 5px;
+    border: 2.5px dotted #FBF5ED;
+    border-radius: 12.5px;
+}
+/*BOKA*/
+.boka{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 15px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+}
+.boka h3{
+    color: darkred;
+    font-size: 25px;
+    font-family: Geneva;
+    border-bottom: 2px solid;
+}
+.boka div{
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: column wrap;
+}
+.boka label{
+    color: firebrick;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 17.5px;
+}
+.boka input{
+    background-color: wheat;
+    border-radius: 5px;
+    font-size: 12.5px;
+    padding: 2.5px;
+}
+.boka textarea{
+    background-color: wheat;
+    border-radius: 5px;
+}
+.boka button{
+    color: wheat;
+    background-color: darkred;
+    border-radius: 5px;
+}
